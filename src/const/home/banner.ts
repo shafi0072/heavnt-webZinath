@@ -26,5 +26,13 @@ export const bannerData = {
         console.log(e.target.value)
       }
     },
+    {
+      title: 'Rooms',
+      type: 'dropdown',
+      values:["1", "2 ", "3", "4", "5", "6",],
+      onChange: (e: any) => {
+        console.log(e.target.value)
+      }
+    },
   ]
 }
