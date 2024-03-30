@@ -1,4 +1,4 @@
-import {propertiesData} from '@/src/const/properties/properties';
+import { propertiesData } from '@/src/const/properties/properties';
 import React from 'react';
 
 const index = () => {
@@ -9,22 +9,23 @@ const index = () => {
                 <p className='my-10'>{propertiesData?.subTitle}</p>
             </div>
             {/* card  */}
-           
-            <div className="justify-center  mx-auto card card-compact w-96 bg-base-100 shadow-xl">
-  <figure><img className='rounded-lg' src="https://media.istockphoto.com/id/1442148484/photo/3d-rendering-of-modern-suburban-house-in-the-garden.jpg?s=612x612&w=0&k=20&c=8Iu_h5cFOEnlPz4_n2nfSUtOyfM_a-hHx9rmlxMF2rI=" alt="Shoes" /></figure>
-  
- </div>
- <div className='flex justify-center gap-5  mx-auto '>
-      <div>
-       <h2>gh</h2>
-       <h2>gh</h2>
-       </div>
-       <div>
-       <h2>gh</h2>
-       <h2>gh</h2>
-       </div>
-      </div>
-         
+            <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+                <div className="-m-1 flex flex-wrap md:-m-2">
+                {
+                        propertiesData?.peroperty?.map(item => <div className="flex w-1/3 flex-wrap">
+                        <div className="w-full p-1 md:p-2">
+                            <img
+                                alt="gallery"
+                                className="block h-full w-full rounded-lg object-cover object-center"
+                                src={item?.img} />
+                        </div>
+                    </div>)
+                    }
+                </div>
+            </div>
+
+            
+
         </div>
     );
 };
