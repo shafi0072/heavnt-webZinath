@@ -1,8 +1,8 @@
 import React from 'react';
-import { navroutes } from '@/src/const/navbar';
+import { navAssets, navroutes } from '@/src/const/navbar';
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mx-[20%]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Havent</a>
+              <img src={navAssets?.logo} className='w-[10%]' alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -33,7 +33,7 @@ const Navbar = () => {
                             return items?.submenu && items?.submenu?.length > 0 ?
                                 <li>
                                     <details>
-                                        <summary>{items?.title}</summary>
+                                        <summary className=''>{items?.title}</summary>
                                         {
                                             items?.submenu && items?.submenu?.length > 0 && <ul className="p-2">
                                                 {
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+               
             </div>
         </div>
     );

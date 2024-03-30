@@ -22,3 +22,6 @@ export const navroutes = [
     title: "Blog",
   },
 ];
+export const navAssets = {
+  logo:'/assets/images/logoBlue.png'
+}
