@@ -27,7 +27,7 @@ const Navbar = () => {
               <img src={navAssets?.logo} className='w-[10%]' alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu text-sm font-semibold menu-horizontal px-1">
                     {
                         navroutes?.map(items => {
                             return items?.submenu && items?.submenu?.length > 0 ?

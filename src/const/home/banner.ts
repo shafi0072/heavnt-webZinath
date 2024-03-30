@@ -1,6 +1,6 @@
 export const bannerData = {
   HeadLine: 'Find Your Haven With Heavnt',
-  subTitle: 'sjajsakjslajsljalsjajsljasjajsl',
+  subTitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
   Action:[
     {
       title: 'Location',
