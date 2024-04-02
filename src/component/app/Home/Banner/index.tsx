@@ -10,9 +10,9 @@ const index = () => {
                     <div className=" w-full">
                         <h1 className="my-7 text-3xl font-bold">{bannerData?.HeadLine}</h1>
                         <div className='flex text-center justify-center items-center gap-5'>
-                            <div className='w-[150px] h-[2px] bg-white'></div>
-                            <div className='w-[100px] bg-opacity-50  '><img src="/assets/images/LOGO 02-01 (1).png" className='' alt="" /></div>
-                            <div className='w-[150px]  h-[2px] bg-white'></div>
+                            <div className='w-[150px] h-[2px] opacity-50 bg-white'></div>
+                            <div className='w-[100px] opacity-50  '><img src="/assets/images/LOGO 02-01 (1).png" className='' alt="" /></div>
+                            <div className='w-[150px]  h-[2px] opacity-50 bg-white'></div>
                         </div>
                         <p className='mb-5'>{bannerData?.subTitle}</p>
                         <div className="bg-gray-100 rounded-lg p-5  grid grid-cols-1 md:grid-cols-3">
